@@ -23,7 +23,7 @@ export default function EditStudent() {
   useEffect(() => {
     //! To fetch all data once/at a time
     axios 
-      .get("http://localhost:5000/users/" + id)
+      .get("http://localhost:3000/users/" + id)
       .then((res) => setValues(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -36,7 +36,7 @@ export default function EditStudent() {
   }
   const handleUpdate=(e)=>{
     e.preventDefault();
-    axios.put("http://localhost:5000/users/"+id,values)
+    axios.put("http://localhost:3000/users/"+id,values)
     .then((res)=>{
       console.log(res);
 

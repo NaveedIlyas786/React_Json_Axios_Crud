@@ -12,7 +12,7 @@ export default function React_DataTable() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/users/${id}`);
+      await axios.delete(`http://localhost:3000/users/${id}`);
       toast.error("User Deleted Successfully!", {
         position: "top-right",
         autoClose: 1500,
@@ -36,7 +36,7 @@ export default function React_DataTable() {
   };
 
   const getUsers = async () => {
-    const result = await axios.get("http://localhost:5000/users");
+    const result = await axios.get("http://localhost:3000/users");
     try {
       setUsersInfo(result.data);
       setFilterUsers(result.data);

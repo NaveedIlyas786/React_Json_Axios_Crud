@@ -23,7 +23,7 @@ export default function AddStudent() {
   const onSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/users", values)
+      .post("http://localhost:3000/users", values)
       .then((res) => {
         console.log(res);
 

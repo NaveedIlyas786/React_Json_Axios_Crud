@@ -9,7 +9,7 @@ export default function ReadStudent() {
   useEffect(() => {
     //! To fetch all data once/at a time
     axios
-      .get("http://localhost:5000/users/"+id)
+      .get("http://localhost:3000/users/"+id)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
