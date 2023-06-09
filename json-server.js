@@ -1,15 +1,14 @@
 import jsonServer from 'json-server';
-import db from './db.json';
-
+import "/db.json"
 const server = jsonServer.create();
-const router = jsonServer.router(db);
+const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
 
 server.use(middlewares);
 server.use('/users', router);
 server.get('/', (req, res) => {
-  res.json(db);
+  res.json("db.json");
 });
 
 server.listen(port, () => {
