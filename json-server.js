@@ -1,7 +1,5 @@
-import * as pkg from 'json-server';
-
-const { create, router: _router, defaults } = pkg;
-const server = create();
+import pkg from 'json-server';
+const { create, router: _router, defaults } = pkg
 const router = _router('db.json');
 const middlewares = defaults();
 const port = process.env.PORT || 3000;
