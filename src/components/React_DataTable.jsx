@@ -154,6 +154,7 @@ export default function React_DataTable() {
             </div>
           }
         />
+        <ToastContainer/>
       </div>
     </>
   );

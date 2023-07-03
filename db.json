@@ -41,18 +41,6 @@
       "email": "sdf@gmial.com",
       "gender": "Female",
       "id": 9
-    },
-    {
-      "name": "Mohsin",
-      "email": "mohsin@gmail.com",
-      "gender": "Male",
-      "id": 11
-    },
-    {
-      "name": "Akram",
-      "email": "akram@gmail.com",
-      "gender": "Male",
-      "id": 14
     }
   ]
 }
